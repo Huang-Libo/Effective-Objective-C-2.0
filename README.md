@@ -33,7 +33,7 @@
 void dispatch_once(dispatch_once_t *predicate, dispatch_block_t block);
 ```
 
-其中, `dispatch_once_t` 是 `long` 的 `typedef` (它和 `dispatch_once` 搭配使用并且只能声明在 `static` 或 `global` 作用域里, 如果使用其他声明, 则其行为是未定义的):
+其中, `dispatch_once_t` 是 `long` 的 `typedef` (它和 `dispatch_once` 搭配使用并且只能声明在 `static` 或 `global` 作用域里, 如果声明为其他作用域, 则其行为是未定义的):
 
 ```c
 typedef long dispatch_once_t;
